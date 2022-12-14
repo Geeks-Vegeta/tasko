@@ -8,6 +8,7 @@ import (
 
 func main() {
 
+	gin.SetMode(gin.ReleaseMode)
 	router := gin.Default()
 	routes.HomeRoutes(router)
 	router.Run(":5000")
