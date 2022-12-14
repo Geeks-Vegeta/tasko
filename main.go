@@ -10,6 +10,6 @@ func main() {
 
 	router := gin.Default()
 	routes.HomeRoutes(router)
-	router.Run("localhost:5000")
+	router.Run(":5000")
 
 }
